@@ -1,3 +1,4 @@
 /resource/
 *.joblib
 
+/saved_models/
