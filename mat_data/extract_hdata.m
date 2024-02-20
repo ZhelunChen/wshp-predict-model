@@ -1,7 +1,7 @@
 clc; clear all
 
 % Load data
-filename = 'Atlanta_Shif_TypSum_MPC_2004_TypOcc_TypBehav_NoTES_02162024_210845';
+filename = 'Tucson_Shif_TypSum_RB_2004_TypOcc_TypBehav_NoTES_03252023_112617';
 load([filename '.mat']);
 
 % Hardware data 

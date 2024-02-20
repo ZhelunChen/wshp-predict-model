@@ -21,10 +21,11 @@ function acc_errors = accumulated_errors(pv, spt, criteria_series, reset_thresho
         else
             % Calculate the error as the difference between temperature and setpoint
             error = pv(i) - spt(i);
-            % Check if adding the error exceeds the max accumulation limit
+            % Constraint the accumulated error
             if current_acc_error + error > 3000
-                % Here, we set the accumulated error to 3000 if adding the next error would exceed it
                 current_acc_error = 3000;
+            elseif current_acc_error + error < 0
+                current_acc_error = 0;
             else
                 current_acc_error = current_acc_error + error;
             end
