@@ -1,5 +1,4 @@
 /resource/
 *.joblib
 
-/saved_models/*
-/saved_models_plus/*
+/saved_models/*.mat
