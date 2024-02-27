@@ -24,8 +24,8 @@ function acc_errors = accumulated_errors(pv, spt, criteria_series, reset_thresho
             % Constraint the accumulated error
             if current_acc_error + error > 3000
                 current_acc_error = 3000;
-            elseif current_acc_error + error < 0
-                current_acc_error = 0;
+            elseif current_acc_error + error < -1000
+                current_acc_error = -1000;
             else
                 current_acc_error = current_acc_error + error;
             end
