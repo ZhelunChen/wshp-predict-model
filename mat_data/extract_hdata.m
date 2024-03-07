@@ -1,7 +1,7 @@
 clc; clear all
 
 % Load data
-filename = 'Atlanta_Shif_TypSum_MPC_2004_TypOcc_TypBehav_NoTES_02252024_171618';
+filename = 'NewYork_Shif_TypSum_MPC_2004_TypOcc_TypBehav_NoTES_03032024_163856';
 load([filename '.mat']);
 
 % Hardware data 
